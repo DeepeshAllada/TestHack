@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Smoke Testing" parallel="tests" thread-count="10" verbose="2"
+	preserve-order="true">
+	<parameter name="Platform" value="BS" />
+	<parameter name="AppPath" value="app2Rate" />
+<!-- 	<parameter name="AppPath" value="bs://26892a1068feb16eed8aff623d48276f2eadc150" /> -->
+	<parameter name="BuildName" value="Simran" />
+    <test name="Execution on Samsung Galaxy S8">
+		<parameter name="Device" value="Samsung Galaxy S8 Plus" />
+		<classes>
+ 			<class name="com.excalibur.qa.testcases.android.royal.smoke.SignIn" /> 
+        </classes>
+    </test>
+        <test name="Execution on Google Nexus 6">	
+        
+		<parameter name="Device" value="Google Nexus 6" />
+        <classes>
+        <class name="com.excalibur.qa.testcases.android.royal.smoke.SignIn" />
+        </classes>
+    </test>
+    
+   <test name="Execution on Samsung Galaxy S7">
+		<parameter name="Device" value="Samsung Galaxy S7" />
+        <classes>
+        <class name="com.excalibur.qa.testcases.android.royal.smoke.SignIn" />
+        </classes>
+    </test>
+</suite>
+
+
+

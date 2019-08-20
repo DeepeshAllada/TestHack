@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Core" parallel="tests" thread-count="10" verbose="2"
+    preserve-order="true">
+
+    <parameter name="Platform" value="Local" />
+    <parameter name="AppPath" value="C:\Users\Allada.Deepesh\Downloads\chrome-76-0-3809-111.apk" />
+    <parameter name="BuildName" value="Build_Android" />
+    <parameter name="PlatformVersion" value="9" />
+
+    <test name="Execution on Real Device">     
+        <parameter name="Device" value="f13dcade" />
+       <classes>
+ 			<class name="app2rate.demo.SignIn" /> 
+        </classes>
+    </test>
+</suite>
